@@ -32,3 +32,4 @@ else:
     else:
         third_bit,carry=full_adder(carry2,int(int(x[countx-3])),int(int(y[county-3])))
     print(carry,third_bit,second_bit,first_bit)
+print("Hello")
