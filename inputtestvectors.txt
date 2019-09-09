@@ -1,0 +1,14 @@
+testvector5=111101
+#Adding two known bits of the two inputs gives the known output.
+
+testvector1=1001uu
+#adding an input with another input of unknown's gives the unknown at the respective unknowns
+
+testvector2=111111
+adding the two max inputs of the three bit series gives the four bit series output with carry 1
+
+testvector3=uu11u0
+#Adding an unkown bit with another unknown bit gives the unknown output.
+
+testvector4=111000
+#Adding any number with all zeros gives the same number.
