@@ -1,0 +1,16 @@
+# The 6 bit inputs are technically 2 separate 3-bit inputs
+
+#input1, 0 plus a negative
+000111
+
+#input2, two negatives sum to a positive, demonstrating overflow
+110101
+
+#input3, adding two's complements/opposite numbers, thus sums to 0
+011101
+
+#input4, 0 plus a positive
+000011
+
+#input5, positive plus a negative
+111011
