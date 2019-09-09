@@ -1,9 +1,8 @@
-# 6 inputs
-# 4 outputs
-# The 6 inputs are technically two separate, 3 bit inputs
+#6 inputs
+#4 outputs
+#14 gates
 
-# INPUTS:
-
+#inputs
 INPUT(A0)
 INPUT(A1)
 INPUT(A2)
@@ -11,26 +10,24 @@ INPUT(B0)
 INPUT(B1)
 INPUT(B2)
 
-
-# OUTPUTS:
+#outputs
 OUTPUT(S0)
 OUTPUT(S1)
 OUTPUT(S2)
-OUTPUT(Cout2)
+OUTPUT(Cout)
 
-# GATES: 
-d = OR(A1, B1)
-e = AND(A1, B1)
-f = AND(Cout0, d)
-g = OR(A2, B2)
-h = AND(A2, B2)
-i = AND(Cout1, g)
-S0 = XOR(A0, B0)
-S1 = XOR(Cout0, j)
-S2 = XOR(Cout1, k)
-Cout0 = AND(A0, B0)
-Cout1 = OR(e, f) 
-Cout2 = OR(h, i)
-j = XOR(A1, B1)
-k = XOR(A2, B2)
-
+#gates
+S0=XOR(A0,B0)
+c = AND(A0,B0)
+d = XOR(A1,B1)
+e = OR(A1,B1)
+f = AND(A1,B1)
+S1=XOR(c,d)
+l = AND(c,e)
+g = XOR(A2,B2)
+h = OR(A2,B2)
+i = AND(A2,B2)
+m = OR(l,f)
+S2=XOR(m, g)
+p = AND(m,h)
+Cout=OR(p,i)
