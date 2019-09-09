@@ -1,14 +1,22 @@
-testvector5=111101
-#Adding two known bits of the two inputs gives the known output.
+#Six input vectors are clearly meant to be two 3 bit inputs.
 
-testvector1=1001uu
-#adding an input with another input of unknown's gives the unknown at the respective unknowns
+testvector1=111101
+#Two known inputs are given as input for the adder.
+ So, Adding two known inputs gives the known output.
 
-testvector2=111111
-adding the two max inputs of the three bit series gives the four bit series output with carry 1
+testvector2=1001uu
+# One known input and another unknown input. 
+  So, adding a known input unknown input gives the unknown output.
+  
+testvector3=111111
+# Adding two max inputs of a series.
+ So, adding the two max inputs(111 for three bit) of the three bit series gives the four bit series penultimate value as output.
+ In generalised way, adding two max inputs of a n bit series gives the n+1 bit series penultimate value.
 
-testvector3=uu11u0
-#Adding an unkown bit with another unknown bit gives the unknown output.
+testvector4=uu11u0
+# Two unknowns are given as input for the adder.
+ So, Adding an unkown bit with another unknown bit gives the unknown output.
 
-testvector4=111000
-#Adding any number with all zeros gives the same number.
+testvector5=111000
+# One input vector is zero vector and another is any known vector.
+ So, Adding any known input with the zero vector input gives the same input.
